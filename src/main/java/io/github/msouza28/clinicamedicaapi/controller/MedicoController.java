@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import io.github.msouza28.clinicamedicaapi.entity.Medico;
 import io.github.msouza28.clinicamedicaapi.medico.DadosAtualizacaoMedico;
 import io.github.msouza28.clinicamedicaapi.medico.DadosListaMedico;
 import io.github.msouza28.clinicamedicaapi.medico.DadosMedico;
 import io.github.msouza28.clinicamedicaapi.medico.DadosMedicoAtualizado;
-import io.github.msouza28.clinicamedicaapi.medico.Medico;
-import io.github.msouza28.clinicamedicaapi.medico.MedicoRepository;
+import io.github.msouza28.clinicamedicaapi.repository.MedicoRepository;
 import jakarta.validation.Valid;
 
 @RestController
@@ -45,8 +45,7 @@ public class MedicoController {
 	}
 
 	@GetMapping
-	public ResponseEntity<Page<DadosListaMedico>> listar(
-			@PageableDefault(size = 10, sort = { "nome" }) Pageable paginacao) {
+	public ResponseEntity<Page<DadosListaMedico>> listar(@PageableDefault(size = 10, sort = { "nome" }) Pageable paginacao) {
 		var page = repository.findAllByAtivoTrue(paginacao).map(DadosListaMedico::new);
 		
 		return ResponseEntity.ok(page);

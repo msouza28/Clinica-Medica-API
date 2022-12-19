@@ -1,5 +1,7 @@
 package io.github.msouza28.clinicamedicaapi.medico;
 
+import io.github.msouza28.clinicamedicaapi.entity.Medico;
+
 public record DadosListaMedico(
 		Long id,
 		String nome,
