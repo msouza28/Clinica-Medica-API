@@ -1,4 +1,4 @@
-package io.github.msouza28.clinicamedicaapi.paciente;
+package io.github.msouza28.clinicamedicaapi.enums;
 
 public enum Convenio {
 

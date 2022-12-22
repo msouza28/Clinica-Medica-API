@@ -1,10 +1,9 @@
 package io.github.msouza28.clinicamedicaapi.entity;
 
 import io.github.msouza28.clinicamedicaapi.endereco.Endereco;
-import io.github.msouza28.clinicamedicaapi.paciente.Convenio;
+import io.github.msouza28.clinicamedicaapi.enums.Convenio;
 import io.github.msouza28.clinicamedicaapi.paciente.DadosAtualizacaoPaciente;
 import io.github.msouza28.clinicamedicaapi.paciente.DadosPaciente;
-import io.github.msouza28.clinicamedicaapi.paciente.DadosPacienteAtualizado;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

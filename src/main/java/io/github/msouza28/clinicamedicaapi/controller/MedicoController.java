@@ -3,7 +3,6 @@ package io.github.msouza28.clinicamedicaapi.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.repository.query.Param;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,7 +28,7 @@ import jakarta.validation.Valid;
 @RequestMapping("medicos")
 public class MedicoController {
 
-	@Autowired
+	@Autowired(required = true)
 	private MedicoRepository repository;
 
 	@PostMapping

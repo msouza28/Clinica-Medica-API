@@ -1,4 +1,4 @@
-package io.github.msouza28.clinicamedicaapi.medico;
+package io.github.msouza28.clinicamedicaapi.enums;
 
 public enum Especialidade {
 	ORTOPEDIA,

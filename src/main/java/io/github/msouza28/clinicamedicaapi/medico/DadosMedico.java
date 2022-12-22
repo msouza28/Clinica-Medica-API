@@ -1,6 +1,7 @@
 package io.github.msouza28.clinicamedicaapi.medico;
 
 import io.github.msouza28.clinicamedicaapi.endereco.DadosEndereco;
+import io.github.msouza28.clinicamedicaapi.enums.Especialidade;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -2,6 +2,7 @@ package io.github.msouza28.clinicamedicaapi.medico;
 
 import io.github.msouza28.clinicamedicaapi.endereco.Endereco;
 import io.github.msouza28.clinicamedicaapi.entity.Medico;
+import io.github.msouza28.clinicamedicaapi.enums.Especialidade;
 
 public record DadosMedicoAtualizado(Long id, String nome, String email, String crm, String telefone, Especialidade especialidade, Endereco endereco) {
 
